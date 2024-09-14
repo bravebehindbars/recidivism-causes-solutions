@@ -1,0 +1,602 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <html lang="en">
+      <link rel="stylesheet" type="text/css" href="class flexv4.css">   
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>class flexv4</title>
+
+      <body>
+
+
+
+
+        <h1>Housing Assistance
+          <p> resource guide</p>
+
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">MENU</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            
+
+
+            
+
+              <a href="../java.html/java.html">employment</a>
+
+              <a href="../skyline.html/skyline.html">na/aa</a>
+
+              <a href="https://workforcesolutionsme.org/">workforce solutions career assistance</a> 
+            </div>
+            
+            <script>
+
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+
+              function filterFunction() {
+                const input = document.getElementById("myInput");
+                const filter = input.value.toUpperCase();
+                const div = document.getElementById("myDropdown");
+                const a = div.getElementsByTagName("a");
+                for (let i = 0; i < a.length; i++) {
+                  txtValue = a[i].textContent || a[i].innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                  } else {
+                    a[i].style.display = "none";
+                  }
+                }
+              }
+            </script>
+
+          </h1>
+
+
+          <div class="home">
+            <a href="../index.html">Home</a>
+
+          </div>
+
+          
+
+          <div class="tab">
+            <div class="outer-box">
+              <button class="tablinks" onclick="openCity(event, 'androscoggin')">androscoggin county</button>
+              <button class="tablinks" onclick="openCity(event, 'aroostook')">aroostook county</button>
+              <button class="tablinks" onclick="openCity(event, 'cumberland')">cumberland county</button>
+              <button class="tablinks" onclick="openCity(event, 'franklin')">franklin county</button>
+              <button class="tablinks" onclick="openCity(event, 'hancock')">hancock county</button>
+              <button class="tablinks" onclick="openCity(event, 'kennebec')">kennebec county</button>
+              <button class="tablinks" onclick="openCity(event, 'knox')">knox county</button>
+              <button class="tablinks" onclick="openCity(event, 'oxford')">oxford county</button>
+              <button class="tablinks" onclick="openCity(event, 'penobscot')">penobscot county</button>
+              <button class="tablinks" onclick="openCity(event, 'washington')">washington county</button>
+              <button class="tablinks" onclick="openCity(event, 'york')"> york county</button>
+            </div>
+            <div class="hidden-content">
+              <div id="androscoggin" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>androscoggin county homeless shelters.</h3>
+
+                <div>Hope Haven Gospel Mission</div>
+                <div>General</div>
+                <div>207-783-6086</div>
+                <div>Lewiston</div>
+                <p></p>
+                <div>New Beginnings*</div>
+                <div>Youth</div>
+                <div>207-795-4070</div>
+                <div>Lewiston</div>
+                <p></p>
+                <div>Rumford Group Homes - Leeds Family Center*</div>
+                <div>Family</div>
+                <div>207-357-5561</div>
+                <div>Leeds</div>
+                <p></p>
+                <div>Rural Community Action Ministries*</div>
+                <div>Families</div>
+                <div>207-524-5095</div>
+                <div>Leeds</div>
+                <p></p>
+                <div>Safe Voices*</div>
+                <div>Domestic Violence</div>
+                <div>800-559-2927</div>
+                <div>Auburn</div>
+                <p></p>
+                <div>St. Martin de Porres Residence</div>
+                <div>General - Adults</div>
+                <div>207-786-4690</div>
+                <div>Lewiston</div>
+              </div>
+
+              <div id="aroostook" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>aroostook county homeless shelters</h3>
+                <div>Homeless Services of Aroostook - Sr. Mary O'Donnell Shelter*</div>
+                <div>General</div>
+                <div>207-764-4125</div>
+                <div>Presque Isle</div>
+                <p></p>
+                <div>Hope and Justice Project*</div>
+                <div>Domestic Violence</div>
+                <div>800-439-2323</div>
+                <div>Caribou, Houlton, Fort Kent</div>
+                <p></p>
+                <div>Maliseet Domestic Violence & Sexual Assault Program  </div>
+                <div>Domestic Violence</div>
+                <div>207-532-6401</div>
+                <div>Houlton</div>
+                <p></p>
+                <div>The Northern Light House - Safe Harbor*</div>
+                <div>Youth</div>
+                <div>207-540-1522</div>
+                <div>Mars Hill</div> 
+              </div>
+
+              <div id="cumberland" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>cumberland county homeless shelters.</h3>
+                <div>City of Portland - Homeless Services Center*</div>
+                <div>General - Adults</div>
+                <div>207-761-2072</div>
+                <div>Portland</div>
+                <p></p>
+                <div>City of Portland Family Shelter*</div>
+                <div>Family</div>
+                <div>207-772-8339</div>
+                <div>Portland</div>
+                <p></p>
+                <div>Milestone*</div>
+                <div>Substance Abuse - Men  </div>
+                <div>207-775-4790</div>
+                <div>Portland</div>
+                <p></p>
+                <div>Preble Street - Elena's Way*</div>
+                <div>General - Adults</div>
+                <div>207-775-0026</div>
+                <div>Portland</div>
+                <p></p>
+                <div>Preble Street - Florence House*</div>
+                <div>General - Women</div>
+                <div>207-699-4392</div>
+                <div>Portland</div>
+                <p></p>
+                <div>Through These Doors*</div>
+                <div>Domestic Violence</div>
+                <div>800-537-6066</div>
+                <div>Portland</div>
+                <p></p>
+                <div>Preble Street - Joe Kreisler Teen Shelter*</div>
+                <div>Youth</div>
+                <div>207-775-0026</div>
+                <div>Portland</div>
+                <p></p>
+                <div>Tedford Housing - Family Shelter*</div>
+                <div>Family</div>
+                <div>207-729-1161 X113</div>
+                <div>Brunswick</div>
+                <p></p>
+                <div>Tedford Housing - Individual Shelter*</div>
+                <div>General - Adults</div>
+                <div>207-729-1161 x104</div>
+                <div>Brunswick</div>
+                <p></p>
+                <div>The Gathering Place**</div>
+                <div>General - Navigator Services </div>
+                <div>207-729-0288</div>
+                <div>Brunswick</div>
+              </div>
+
+
+
+              <div id="franklin" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>franklin county homless shelter.</h3>
+                <div>Western Maine Community Action**</div>
+                <div>General - Navigator Services </div>
+                <div>207-645-3764</div>
+                <div>East Wilton</div>
+              </div>
+
+              <div id="hancock" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>hancock county homeless shelters.</h3>
+
+                <div>H.O.M.E. Inc - Dorr House*</div>
+                <div>General</div>
+                <div>207-469-7961</div>
+                <div>Orland</div>
+                <p></p>
+                <div>H.O.M.E. Inc - Emmaus*</div>
+                <div>General</div>
+                <div>207-667-3962</div>
+                <div>Ellsworth</div>
+                <p></p>
+                <div>H.O.M.E. Inc - Sister Mary Ahearn House*</div>
+                <div>Families</div>
+                <div>207-469-7961</div>
+                <div>Orland</div>
+                <p></p>
+                <div>H.O.M.E. Inc - St. Francis Inn*</div>
+                <div>General</div>
+                <div>207-469-7961 </div>
+                <div>East Orland</div>
+                <p></p>
+                <div>The Next Step - Ellsworth*</div>
+                <div>Domestic Violence</div>
+                <div>800-315-5579Ellsworth</div>
+                <div>Ellsworth</div>
+              </div>
+
+              <div id="kennebec" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>kennebec county homeless shelters.</h3>
+
+                <div>Bread of Life Ministries*</div>
+                <div>General</div>
+                <div>207-626-3479 </div>
+                <div>Augusta</div>
+                <p></p>
+                <div>Family Violence Project*</div>
+                <div>Domestic Violence</div>
+                <div>877-890-7788</div>
+                <div>Augusta</div>
+                <p></p>
+                <div>Mid-Maine Homeless Shelter*</div>
+                <div>General</div>
+                <div>207-872-8082</div>
+                <div>Waterville</div>  
+              </div>
+
+              <div id="knox" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>knox county homeless shelters.</h3>
+
+                <div>Knox County Homeless Coalition - Hospitality House*</div>
+                <div>General</div>
+                <div>207-593-8151</div>
+                <div>Rockport</div>
+                <p></p>
+                <div>New Hope for Women**</div>
+                <div>Domestic Violence</div>
+                <div>800-522-3304</div>
+                <div>Rockland</div>
+              </div>
+
+
+
+
+              <div id="oxford" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>oxford county homeless shelter</h3>
+
+                <div>Rumford Group Homes - Monier Family Center*</div>
+                <div>General</div>
+                <div>207-357-5561</div>
+                <div>Rumford</div>
+                <p></p>
+                <div>Rumford Group Homes - Norway Family Center*</div>
+                <div>Women & Children</div>
+                <div>207-357-5561</div>
+                <div>Norway</div>
+                <p></p>
+                <div>Rumford Group Homes - Rumford Family Center*</div>
+                <div>Family</div>
+                <div>207-357-5561</div>
+                <div>Rumford</div>
+
+              </div>
+
+
+              <div id="penobscot" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>penobscot county homeless shelter</h3>
+
+                <div>Bangor Area Homeless Shelter*</div>
+                <div>General</div>
+                <div>207-947-0092</div>
+                <div>Bangor</div>
+                <p></p>
+                <div>Partners for Peace*</div>
+                <div>Domestic Violence</div>
+                <div>800-863-9909</div>
+                <div>Bangor</div>
+                <p></p>
+                <div>PCHC- Hope House*</div>
+                <div>General - Adults</div>
+                <div>207-217-6713</div>
+                <div>Bangor</div>
+                <p></p>
+                <div>Shaw House*</div>
+                <div>Youth</div>
+                <div>207-941-2874 </div>
+                <div>Bangor</div>
+                <p></p>
+                <div>The Shepherd's Godparent home</div>
+                <div>Pregnant Women</div>
+                <div>207-949-2273</div>
+                <div>Bangor</div>
+              </div>
+
+              <div id="somerset" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>somerset county homeless shelter</h3>
+
+                <div>Family Violence Project*</div>
+                <div>Domestic Violence</div>
+                <div>877-890-7788</div>
+                <div>Somerset County</div>
+                <p></p>
+                <div>New Hope Shelter</div>
+                <div>Women and Children</div>
+                <div>207-643-6015</div>
+                <div>Solon</div>
+                <p></p>
+                <div>Sheltered By Jesus</div>
+                <div>General - Adults</div>
+                <div>207-474-8833</div>
+                <div>Skowhegan</div>  
+              </div>
+
+              <div id="washington" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>washington county homeless shelter</h3>
+
+
+                <div>Passamoquoddy Peaceful Relations</div>
+                <div>Domestic Violence</div>
+                <div>877-853-2613</div>
+                <div>Pleasant Point</div>
+                <p></p>
+                <div>The Next Step - Machias*</div>
+                <div>Domestic Violence</div>
+                <div>800-315-5579</div>
+                <div>Machias</div>
+              </div>
+
+              <div id="york" class="tabcontent">
+                <h3>for assistance</h3>
+                <h3>york county homeless shelter</h3>
+
+
+                <div>Caring Unlimited*</div>
+                <div>Domestic Violence  </div>
+                <div>800-239-7298</div>
+                <div>Sanford</div>
+                <p></p>
+                <div>York County Shelter Programs, Inc. - Family Shelter*</div>
+                <div>General</div>
+                <div>207-324-1137</div>
+                <div>Sanford</div>
+                <p></p>
+                <div>York County Shelter Programs, Inc. - Individual Shelter*</div>
+                <div>General</div>
+                <div>207-324-1137</div>
+                <div>Alfred</div>
+              </div>
+            </div>
+            <script>
+              function openCity(evt, cityName) {
+                var citynameblock= document.getElementById(cityName)
+                if (citynameblock.style.display == "block"){
+                  citynameblock.style.display ="none"
+                  return
+                }
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+            </script>
+
+
+            
+          </div>
+
+
+        </div>
+        <div class="bottom-page">
+          <h2>Area housing authorities</h2>
+
+          <div class="grid-container">
+            <div><a href="https://auburnhousing.org/">Auburn Housing Authority.</a></div>
+            <div>Phone:(207)784-7351<br>fax:(207)784-5545</div>
+            <div>20 great falls plaza auburn, me.04212</div>
+            <div>Email: mszydlowski@auburnhousing.org</div>
+
+
+            <div><a href="https://www.augustahousing.org/">Augusta Housing Authority.</a></div>
+            <div>Phone:(207)626-2357 ext-2<br> fax:(207)626-2359</div>
+            <div>33 union st augusta me, 04330</div>  
+            <div>Email: norman.maze@augustahousing.org</div>
+
+            <div><a href="https://www.mainehousing.org/">Maine State Housing Authority.</a></div>
+            <div>Phone:(207)626-5600<br>fax:(207)6264678</div>
+            <div>26 edison drv augusta me, 04330</div>
+            <div>Email: directorsoffice2@mainehousing.org</div>
+
+            <div><a href="https://www.hud.gov/program_offices/public_indian_housing/programs/ph/mtw/bangor">Bangor Housing Authority.</a></div>
+            <div>Phone:(207)942-6365<br>fax:(207)942-6043</div>  
+            <div>161 davis rd bangor me, 04401</div>
+            <div>Email: mmyatt@bangorhousing.org</div>
+
+            <div><a href="https://www.barharbormaine.gov/283/Housing-Authority">Bar Harbor Housing Authority.</a></div>  
+            <div>Phone:(207)288-4770 ext-111<br> fax:(207)288-4770</div>
+            <div>no mail</div>
+            <div>Email: wbrehm@mdieha.org</div>
+
+            <div><a href="https://www.bathhousing.org/">Bath Housing Authority.</a></div>
+            <div>Phone: (207) 443-3116</div>
+            <div>80 Congress Street Bath, Maine 04530</div>
+            <div>Email:  info@bathhousing.org.</div>
+
+            <div><a href="https://www.biddefordmaine.org/2397/Biddeford-Housing-Authority">Bidderford Housing Authority.</a> </div>
+            <div>Phone: (207) 282-6537</div>
+            <div>P.O. Box 2287
+            Biddeford, ME 04005</div>
+            <div>Email: bhousing.org</div>
+
+            <div><a href="http://www.brewerhousing.com/"> Brewer Housing Authority.</a></div>
+            <div>Phone: (207) 989-7551</div>
+            <div>15 Colonial Circle
+              Suite 1
+            Brewer, Maine 04412</div>
+            <div>www.brewerhousing.com</div>
+
+            <div><a href="https://brunswickhousing.org/">Brunswick Topsham Housing Authority.</a></div>
+            <div>Phone: (207) 725-8711</div>
+            <div>12 Stone Street
+            Brunswick, Maine 04011</div>
+            <div>Email:  info@brunswickhousing.org</div>
+
+            <div><a href="https://caribouhousing.org/">Caribou Housing Authority.</a></div>
+            <div>Phone: (207) 493-4235<br>
+            Fax: (207) 498-3954</div>
+            <div>25 High Street
+            Caribou, Maine 04736</div>
+            <div>Email: caribouhousing.org</div>
+
+            <div><a href="https://www.affordablehousing.com/housing-authority-me/fort-fairfield-housing-authority-2132/">Fort Fairfield Housing Authority.</a></div>
+            <div>Phone: (207) 476-5771</div>
+            <div>18 Fields Lane
+            Fort Fairfield, Maine 04742</div>
+            <div>Email: housingauthorityff.org</div>
+
+            <div><a href="https://www.passamaquoddy.com/?page_id=77">Indian Township Housing Authority.</a> </div>
+            <div>Phone: (207) 796-8004</div>
+            <div>P. O. Box 99
+            Princeton, Maine 04668</div>
+            <div>Email:passamaquoddy tribe@indiantownship</div>
+
+            <div><a href="https://lewistonhousing.org/">Lewiston Housing Authority.</a> </div>
+            <div>Phone: (207) 783-1423<br>
+            Fax: (207) 783-8648</div>
+            <div>One College Street
+            Lewiston, Maine 04240</div>
+            <div>Email:info@lewistonhousing.org.</div>
+
+            <div><a href="https://www.affordablehousing.com/housing-authority-me/ellsworth-housing-authority-2148/"> Mt Desert./Ellsworth Housing Authority.</a> </div>
+            <div>Phone: (207) 288-4770<br>
+            Toll Free: (207) 288-4770</div>
+            <div>80 Mount Desert Street
+              P.O. Box 28
+            Bar Harbor, Maine 04609</div>
+            <div>www.emdiha.org</div>
+            
+            <div><a href="https://oldtownhousing.net/">Oldtown Housing Authority.</a></div>
+            <div>Phone: (207) 827-6151<br>
+            Fax: (207) 827-1502</div>
+            <div>358 Main Street
+              P.O. Box 404
+            Old Town, Maine 04468</div>
+            <div>Email: oldtownhousing.net</div>
+
+            <div><a href="https://www.penobscotnation.org/departments/housing-department/">Penobscot Nation Housing Authority.</a></div>
+            <div>Phone: (207) 827-7147</div>
+            <div>Indian Island
+             12 Wabanaki Way
+           Old Town , Maine 04668</div>
+           <div>Email: penobscotnation.org</div>
+
+           <div><a href="https://www.porthouse.org/">Portland Housing Authority.</a> </div>
+           <div>Phone: (207) 773-4753<br>
+           Fax: (207) 774-6471</div>
+           <div>14 Baxter Boulevard
+           Portland, Maine 04101</div>
+           <div>www.porthouse.org</div>
+
+           <div><a href="https://www.pihousing.org/">Presque Isle Housing Authority.</a></div>
+           <div>Phone: (207) 768-8231</div>
+           <div>58 Birch Street
+           Presque Isle, ME 04769</div>
+           <div>Email: info@pihousing.org</div>
+
+           <div><a href="https://sanfordhousing.org/">Sanford Housing Authority.</a></div>
+           <div>Phone: (207) 324-6747</div>
+           <div>17 School Street
+             P.O. Box 1008
+           Sanford, Maine 04073</div>
+           <div>Email: sanfordhousing.org</div>
+
+           <div><a href="https://spha.net/"> South Portland Housing Authority.</a> </div>
+           <div>Phone: (207) 773-4140</div>
+           <div>100 Waterman Drive
+            Suite 101
+          South Portland, Maine 04106</div>
+          <div>Email: spha.net</div>
+
+          <div><a href="https://www.vanburenmaine.com/government/van_buren_housing_authority.php"> Van Buren Housing Authority.</a></div>
+          <div>Phone: (207) 868-5441</div>
+          <div>16 Champlain Street
+           P.O. Box 158
+         Van Buren, Maine 04785</div>
+         <div>no listed email</div>
+
+         <div><a href="https://www.waterville-me.gov/210/Housing-Assistance">Waterville Housing Authority.</a> </div>
+         <div>Phone: (207) 873-2155<br>
+         Fax: (207) 877-9429</div>
+         <div>88 Silver Street
+         Waterville, Maine 04901</div>
+         <div>www.watervillehousing.org</div>
+
+         <div><a href="https://westbrookhousing.org/">Westbrook Housing Authority.</a></div>
+         <div>Phone: (207) 854-9779<br>
+         Fax: (207) 854-0962</div>
+         <div>30 Liza Harmon Drive
+         Westbrook, Maine 04092</div>
+         <div>Email: westbrookhousing.org</div>
+
+         <div><a href="https://www.yorkmaine.org/234/York-Housing-Authority"> York Housing Authority.</a></div>
+         <div>Phone: (207) 363-8444</div>
+         <div>4 Pine Grove Lane
+         York, Maine 03909</div>
+         <div>Email: info@yorkhousing.info</div>
+
+
+       </div>
+     </div>
+     
+     <div class=" sidebar neg-space ">
+
+
+      <ol><a href="../skyline.html/skyline.html">na/aa</a></ol><br>
+
+      <ol><a href="https://www.google.com/search?sca_esv=e0b5cfa75ef3a8a9&sca_upv=1&rlz=1C1GCEU_enUS1115US1115&q=Housing+application&uds=ADvngMgF8caFCAZs3Q_Gl-MV9drFSa2Ggfngkr4jIq5rNCbVfmIvqmUAhLG5uQ8DuG8mTMeAEJTQr_dzzN1jf-Wz9xrhuksNLX1jFwRovfbvN_YmdzenRyBeF7RuHDuoF7SAxU9Elyrm&sa=X&ved=2ahUKEwjUw9mB_qiHAxXKSTABHYgOBToQxKsJegQIFxAB&ictx=0&biw=2560&bih=1313&dpr=1">housing</a></ol><br>
+
+      <ol><a href="../java.html/java.html">employment</a></ol><br>
+
+      <ol><a href="#">education/training</a></ol><br>
+
+      <ol><a href="https://workforcesolutionsme.org/">workforce solutions<br> career assistance</a> 
+      </div></ol><br></div>
+
+    </div>
+    <div class="affordable">
+      <button><a href="https://www.avestahousing.org/">Affordable<br>housing<img src="affordable.jpg"></a></button>
+    </div>
+    <div class="ptown">
+    </div>
+    <div class="bangor"></div>
+  </div>
+</style>
+
+</head>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body{
+
+}
+.top-block{
+	border-width: 20px;
+	border-color: #50b8e7;
+	border-style: solid;
+	align-content: center;
+	text-align: center;
+	margin: 8px 2px;
+	background-color: #fff4b3;
+	height: 300px;
+	font-size: 90px;
+	font-family: serif;
+	color: #105a92;
+}
+
+.nav, .nav-pills a {
+	
+	justify-content: space-evenly;
+	text-decoration: underline yellow;
+	border-radius:10px;
+	font-size: 25px;
+	color:yellow;
+}
+button a:hover{
+
+	color:skyblue;
+	width: 400px;
+	align-content: center;
+	padding: 10px;
+	background-color: black;
+	align-content: center;
+}
+
+.column{
+float: left;
+height:100%;
+
+}
+.left{
+	width:15%;
+	height:100%;
+
+}
+.right{
+	width:84%;
+	height:100%;
+
+}
+.container {
+	flex: ;
+
+	margin-top: 30px;
+	display: flex;
+	flex-direction:column ;
+	width: 300px;
+	height:1000px;
+
+
+}
+.meat{
+	width:1400px;
+}
+.outer-container{
+	align-content: center;
+
+	margin-left: 70.2px;
+	width: 410px;
+	height:1450px;
+	border-style: none;
+/*  border-color: #7d9cb6;*/
+}
+
+.vertical-menu {
+/*  width: 200px;*/
+border-style: none;
+width: 200px;
+align-content: center;
+background-color: black;
+}
+
+}
+
+.utility ,.vertical-menu {
+	
+/*	margin-top: 200px;*/
+text-align: center;
+width:200px;
+height: 200px;
+color: black;
+display: block;
+padding: 12px;
+border-style: solid;
+
+}
+.vertical-menu a {
+	width: 370px;
+	margin-top: 10px;
+	border-style: solid;
+	box-align: center;
+	background-color: steelblue;
+/*margin-left: 600px;*/
+color: black;
+display: block;
+padding: 12px;
+text-decoration: none;
+
+}
+.image{
+
+
+}
+
+h5{
+	font-size: 40px;
+	font-family: serif;
+	text-align: center;
+	text-shadow:0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6 ;
+	color:yellow;
+}
+
+h4{
+	text-align: center;
+	font-family: serif;
+	padding: 20px;
+	border-style: solid;
+	border-color: black;
+	color: wheat;
+}
+h3{
+	font-size: 30px;
+	text-align: center;
+	font-family: serif;
+	padding: 20px;
+	border-style: none;
+	border-color: black;
+	color: skyblue;
+}
+h2{
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: serif;
+	padding: 20px;
+	border-style: none;
+
+/*	border-color: gold;*/
+color: wheat;
+}
+
+
+.row,.col-sm-4 {
+
+	text-align: center;
+	margin-left: 500px;
+	font-size: 16px;
+	color:wheat;
+}
+
+
+section{
+	margin-top: 10px;
+	float: right;
+	border-style: solid;
+	border-color: slategrey;
+	justify-content: space-evenly;
+}
+footer{
+	width:1400px;
+}
